@@ -1,0 +1,18 @@
+<h1>Algunos de nuestros productos</h1>
+
+<?php while($product = $productos->fetch_object()): ?>
+    <div class="product">
+        <a href="<?=RUTE_URL?>/producto/view&id=<?=$product->id?>">
+        <?php if($product->imagen != null): ?>
+        <img src="<?=RUTE_URL?>/uploads/images/<?=$product->imagen?>" alt="">
+<?php else:?>
+        <img src="<?=RUTE_URL?>/uploads/images/no-image.png" alt="">
+<?php endif; ?>
+        <h2><?=$product->nombre; ?></h2>
+        </a>
+        <p><?=$product->precio ?></p>
+        <a href="<?=RUTE_URL ?>/carrito/addcart&id=<?=$product->id?>" class="button">Comprar</a>
+
+    </div>
+
+<?php endwhile?>

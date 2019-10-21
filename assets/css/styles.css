@@ -1,0 +1,424 @@
+/*General*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif,Arial, Helvetica;
+}
+
+body{
+    background: rgba(237,237,237,1);
+    background: -moz-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+}
+
+
+a{
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color: rgb(141, 141, 141);
+}
+
+a:hover{
+    color: black;
+    
+}
+
+.alert-green{
+    color: green;
+}
+
+.alert-red{
+    color: red;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+td{
+    border-top: 1px solid #ccc;
+    padding: 2px;
+}
+
+
+/*Container*/
+
+#container{
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px grey;
+    background: white;
+}
+
+
+/*Header*/
+
+#header{
+    height: 140px;
+    background: #f0f0f0;
+
+}
+
+#logo{
+    margin-left: 20px;
+    float: left;
+}
+
+#logo img{
+    margin-top: 35px;
+    height: 70px;
+    float: left;
+    
+}
+
+#logo a{
+    padding-left: 20px;
+    float: left;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    color: #01b1ea;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 45px;
+    text-shadow: 0px 2px 1px #222222;
+    transition: all 300ms;
+}
+
+#logo a:hover{
+    text-shadow: 0px 2px 1px #222222, 0px 0px 4px #01b1ea;
+}
+
+/*Menu*/
+
+#menu{
+    clear:both;
+    background: #222;
+    color: white;
+    height: 55px;
+    border-bottom: 4px solid green;
+}
+
+
+
+#menu ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-left: 25px;
+}
+
+#menu ul li{
+    line-height: 55px;
+    float: left;
+    border-width: 1px solid #363636;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: all 500ms;
+}
+
+#menu a:first-child{
+    border-left: 1px solid #363636;
+}
+
+#menu a:hover{
+    background: #ACACAC;
+    
+}
+
+#content{
+    clear: both;
+    margin: 0px auto;
+    overflow: initial;
+    background: white;
+}
+
+/*BARRA LATERAL*/
+#lateral{
+    width: 22%;
+    min-height: 500px;
+    float: left;
+    margin-top:20px;
+    margin-left: 10px;
+}
+
+#lateral .block_aside{
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+#lateral h3{
+    display: block;
+    color: #222;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #E1E1E1;
+    border-bottom: 2px solid #01B1EA;
+}
+
+#lateral ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lateral ul li{
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*form general*/
+.form-container{
+    width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="name"],
+input[type="number"],
+textarea, select{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="name"],
+textarea,select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    padding: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+
+    border: 1px solid #1579b5;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+button, .button{
+    display: auto;
+    border-radius: 2px;
+    width: auto;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background: #2b7ed8;
+    border: 1px solid #11608e;
+    cursor: pointer;
+}
+
+.button-green{
+    background: rgb(0, 161, 0);
+}
+
+.button-green:hover{
+    background: rgb(0, 131, 0);
+}
+
+.button-red{
+    background: rgb(252, 24, 24);
+}
+
+.button-red:hover{
+    background: rgb(199, 2, 2);
+}
+
+.small{
+    width: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+input[type="submit"]:hover{
+    background: #2263a8; 
+}
+
+.button{
+    background: rgba(30, 173, 92, 0.884);
+    color: white !important;
+    text-decoration: none;
+}
+
+.button:hover{
+    background: rgb(180, 180, 180);
+    color: black !important;
+}
+
+label,
+input[type="button"],
+input[type="submit"]
+{
+    margin-top: 10px;
+    display: block;   
+  }
+
+
+/*Central*/
+
+#central{
+    width: 72%;
+    min-height: 500px;
+    float: right;
+    border-left: 1px solid #ccc;
+    box-shadow: -5px -1px 5px #ddd;
+    padding: 25px;
+}
+
+#central h1{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    
+}
+/*Productos*/
+
+.product{
+  width: 30%;
+  float: left;  
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product img{
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.product p{
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.product-detail{
+  width: 100%;  
+}
+
+.product-detail .image{
+    display: block;
+    width: 47%;
+    float: left;
+}
+
+.product-detail img{
+    display: block;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.data{
+        width: 50%;
+        float: right;
+        
+    }
+
+.product-detail .button{
+ width: 200px;
+ text-align: center;
+
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.price{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #444;
+}
+
+.img-carrito{
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+
+}
+
+.total-carrito{
+    float: right;
+}
+
+.delete-carrito{
+    width: 255px;
+    float: right;
+}
+
+.button-delete{
+    display: block;
+    float: right;
+    width: 105px;
+    margin: 10px;
+    background: rgb(36, 154, 209);
+}
+
+.button-delete:hover{
+    background: rgb(31, 133, 180);
+}
+
+/*Footer*/
+
+#footer{
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: black;
+    border-top: 4px solid green;
+}
+
+
